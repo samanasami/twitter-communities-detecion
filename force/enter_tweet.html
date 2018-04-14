@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+#backgroung {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+    background-position: center;
+
+}
+
+
+
+</style>
+</head>
+<div id="background">
+<body background= "{{ url_for('static', filename ='css/images/icons/gp.jpg') }}">
+</div>
+
+<div class="content">
+  <h1>TWITTER TOOL FOR COMMUNITIES DETECTION</h1>
+   <form action = "{{ url_for('gettweet') }}" method = "POST">
+         <h5>Helping data analysts to intuitively reveal patterns and trends, highlight outliers and tells stories with their data.</h5>
+         <h5>capable of revealing significant insights into the dynamics of dark networks, particularly the identification of critical nodes, which can then be targeted by law enforcement and security agencies for disruption. </h5>
+       <input type = "text" name = "nm" placeholder=" Enter a Hashtag" style=" width:200px;font-size: 18px;padding: 10px;border: none;background:#bfbfbf;color:white;border-radius:15px;"/></br><br>
+      
+         <input type = "submit" value = "submit" style=" width: 200px;font-size: 18px;padding: 10px;border: none;background:#3d5c5c;color:white;cursor: pointer;border-radius:15px 50px 30px 5px;"/><br><br>
+      </form>
+ 
+ 
+</div>
+
+</body>
+</html>
