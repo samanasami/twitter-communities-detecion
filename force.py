@@ -27,10 +27,10 @@ c.execute("CREATE TABLE IF NOT EXISTS tweets(text VARCHAR, created_at DATETIME, 
 
 conn = sqlite3.connect('tablet12.db')
 x = conn.cursor()
-consumer_key="bDvt2ZvslCHJ7aYarWZ75iwep"
-consumer_secret="MnPiklb2IqIPP6ZfsviX5vJv0B8ybGzDdplnETqeE1TK7qCknT"
-access_token="876855851159613440-9l9E29sSm4fWwfK74EGK4JNpGaEu44N"
-access_token_secret="o1Ca0wMcOQCqeYkdXog9eHIzG0QsUQDnIg4v1DrPWJsc4"
+consumer_key="***************"
+consumer_secret="*****************"
+access_token="*************************"
+access_token_secret="*******************"
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
